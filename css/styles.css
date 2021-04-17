@@ -1,8 +1,7 @@
 
 /***********ID SELECTORS*********/
 #title{
-  background-color: #fff;
-  color:#fff;
+
 
 }
 #feature{
@@ -86,7 +85,12 @@ body{
   color:#0d71ad;
   text-align: center;
 }
-
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
 
 .card{
 border: none;
@@ -109,16 +113,8 @@ margin-top: 2%;
   margin-top: 100px;
 
 }
-@media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; }
-	.navbar .nav-item:hover .nav-link{   }
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
-}
 
-.navbar-nav{
 
-}
 .info-p-2{
 padding-left: 850px;
 font-size: 1.1rem;
@@ -143,11 +139,7 @@ line-height: 1.5;
   padding: 3% 15% ;
 }
 
-.navbar-brand{
-  font-family: "Ubuntu";
-  font-size: 2.5rem;
-  font-weight: bold;
-}
+
 .nav-item{
   padding: 0 18px;
 }
@@ -160,10 +152,45 @@ line-height: 1.5;
   margin: 5% 3% 5% 0%;
 }
 
-.title-image{
-  width: 60%;
-  transform: rotate(25deg);
 
+@media (max-width:1248px) {
+.hist{
+width: 100%;
+margin-left:1px;
+
+font-style: normal;
+text-align: center;
+}
+}
+@media (max-width:1248px) {
+.who{
+width: 150%;
+margin-left:-100px;
+font-style: normal;
+text-align: center;
+}
+}
+@media (max-width:1248px) {
+.navbar-brand{
+width: 150%;
+margin-left:-100px;
+font-style: normal;
+text-align: center;
+}
+}
+@media (max-width:1248px) {
+.feature-box{
+font-style: normal;
+text-align: center;
+width: 100%;
+
+}
+}
+@media (max-width:1248px) {
+.separador{
+margin-bottom: 10%;
+width: 100%;
+}
 }
 
 .press-logo{
@@ -196,13 +223,4 @@ margin: 20px 20px 50px;
 }
 .carousel-button{
 
-}
-
-@media(max-width: 1028px){
-  #title{
-    text-align: center; }
-    .title-image{
-      position: static;
-      transform: rotate(0);
-    }
 }
